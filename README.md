@@ -1,22 +1,5 @@
-# Convex + TypeScript + ESLint + Vite + React + Clerk + Tailwind + shadcn/ui
+# Streamline
 
-This template provides a minimal setup to get Convex working, with TypeScript,
-ESLint and React using [Vite](https://vitejs.dev/). It uses [Clerk](https://clerk.dev/) for user authentication.
+We’ve automated away the tedious parts of grading, while still leaving room for teacher and student input in the process. We use LLMs to swiftly grade simple black-or-white questions with high confidence, and provide initial grades for longer/more difficult questions, with requests for human input. To increase trust among the education community, we try our best to provide full transparency to both the teacher and the student, providing citations to specific parts of the student answer for evidence and a confidence score that the LLM assigns itself. Our platform makes it easy for teachers to manually override the LLM generated grade, flagging grades with no citations and a low confidence score. Our hope is that grading time will be reduced for thousands of classes that are graded manually, allowing teachers to focus their energy on other, more meaningful tasks. 
 
-Start by editing `convex/myFunctions.ts` and interact with your React app.
-
-See Convex docs at https://docs.convex.dev/home
-
-## Setting up
-
-```
-npm create convex@latest -t react-vite-clerk-shadcn
-```
-
-Then:
-
-1. Follow steps 1 to 3 in the [Clerk onboarding guide](https://docs.convex.dev/auth/clerk#get-started)
-2. Paste the Issuer URL as `CLERK_JWT_ISSUER_DOMAIN` to your dev deployment environment variable settings on the Convex dashboard (see [docs](https://docs.convex.dev/auth/clerk#configuring-dev-and-prod-instances))
-3. Paste your publishable key as `VITE_CLERK_PUBLISHABLE_KEY="<your publishable key>"` to the `.env.local` file in this directory.
-
-If you want to sync Clerk user data via webhooks, check out this [example repo](https://github.com/thomasballinger/convex-clerk-users-table/).
+Note: We manually forked our private repo because we didn't have enough time to extract out the OpenAI key. Feel free to ask us to share our private repo with you.
