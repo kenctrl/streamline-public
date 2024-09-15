@@ -1,0 +1,31 @@
+body {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+/* Initial state of the page before transition */
+.page-enter {
+  opacity: 0;
+  transform: translateX(10px);
+  /* Subtle movement */
+}
+
+/* Page is fully rendered */
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+/* Initial state before leaving the page */
+.page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Transition to leaving the page */
+.page-exit-active {
+  opacity: 0.5;
+  /* Subtle fade-out, stays visible while the new page loads */
+  transform: translateX(-10px);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
